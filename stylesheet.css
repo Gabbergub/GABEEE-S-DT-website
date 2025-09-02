@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: 	#ffff;
+  cursor: url('arrow-cursor.png') 0 0, auto; /* set hot spot (x y) */
 
 /*background-size: 85.5px 85.5px;
  background-image:
