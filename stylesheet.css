@@ -29,6 +29,11 @@ font-weight: 700;
 font-style: normal;
 text-transform: uppercase;
  font-size: clamp(1rem, 2vw + 0.5rem, 2.5rem);
+
+  display: inline; /* makes background only cover the text */
+  background-color: #69df46;
+  margin: 0;       /* remove default margin */
+  padding: 0;      /* remove any padding */
 }
 h3 {
 font-family: "indivisible", sans-serif;
@@ -70,8 +75,7 @@ font-style: normal;
 font-size: clamp(0.9rem, 1vw, 1rem);
 }
 .project-descriptor {
-color: #69df46;
-/*color: goldenrod;*/
+color: gray;
 font-family: "owners-text", sans-serif;
 font-weight: 400;
 font-style: normal;
