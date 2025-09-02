@@ -14,6 +14,14 @@ body {
 .content {
    margin: 40px;
 }
+a {
+  text-decoration: none;
+  color: #69df46;
+  
+}
+.link {
+line-height: 0px;
+}
 
 .header {
 font-family: "indivisible", sans-serif;
@@ -57,7 +65,8 @@ font-style: normal;
 font-size: clamp(0.9rem, 1vw, 1rem);
 }
 .project-descriptor {
-color: goldenrod;
+color: #69df46;
+/*color: goldenrod;*/
 font-family: "owners-text", sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -79,6 +88,14 @@ img {
   max-width: 100%;  /* ensures it never exceeds its container */
   height: auto;     /* maintains aspect ratio */
   display: block;   /* removes extra space below image */
+}
+
+.shrink-hover {
+  transition: transform 0.3s ease;
+}
+
+.shrink-hover:hover {
+  transform: scale(0.9);
 }
 
 /* Optional: adjust size for very small screens */
