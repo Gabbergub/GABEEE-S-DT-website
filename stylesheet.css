@@ -55,7 +55,12 @@ font-style: normal;
 }
 
 .text {
-width: 70%;
+width: 50%;
+}
+@media (max-width: 768px) {
+  .text {
+    width: 100%;
+  }
 }
 .project {
   padding-bottom: 1px;
