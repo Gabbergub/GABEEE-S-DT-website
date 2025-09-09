@@ -61,6 +61,8 @@ font-style: normal;
 
 .text {
 width: 50%;
+padding-top: 10px;
+padding-bottom: 40px;
 }
 @media (max-width: 768px) {
   .text {
@@ -114,6 +116,7 @@ img {
     max-width: none;
   }
 }
+
 /*
 Indivisible Thin
 font-family: "indivisible", sans-serif;
