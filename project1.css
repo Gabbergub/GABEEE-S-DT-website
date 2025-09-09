@@ -120,13 +120,35 @@ img {
 }
 
   img,.gif {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     margin: auto;
-    width: 35%; /* never exceed parent container */
+    max-width: 600px; /* never exceed parent container */
     height: auto;    /* keeps aspect ratio */
     display: block;  /* removes small gaps under images */
   }
+
+  /* For larger screens */
+@media (min-width: 1024px) {
+  img, .gif {
+    width: 90%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+.Map {
+  max-width: 100%;
+  padding-top: 0px;
+}
+  /* For larger screens */
+@media (min-width: 1024px) {
+  img, .map {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
 
   .center {
   display: flex;
@@ -136,4 +158,23 @@ img {
   text-align: center;      /* makes text + links centered */
   font-family: "indivisible", sans-serif;
 font-weight: 500;
+}
+.subject {
+  font-family: "indivisible", sans-serif;
+font-weight: 700;
+font-style: normal;
+text-transform: uppercase;
+ font-size: clamp(1rem, 2vw + 0.5rem, 2.5rem);
+
+/*  display: inline;
+  background-color: #69df46;
+  margin: 0;
+  padding: 0; */
+}
+.figjam {
+  padding-bottom: 150px;
+}
+.history{
+  padding-bottom: 150px;
+  width: 100%;
 }
