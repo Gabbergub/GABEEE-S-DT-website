@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: 	#ffff;
+  background-color: 	#ffffff;
   cursor: url('arrow-cursor.png') 0 0, auto; /* set hot spot (x y) */
 
 /*background-size: 85.5px 85.5px;
@@ -41,7 +41,7 @@ font-weight: 700;
 font-style: normal;
 text-transform: uppercase;
 }
-.project-link {
+.project-info {
 /*  display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -50,6 +50,7 @@ font-family: "indivisible", sans-serif;
 font-weight: 500;
 font-style: italic;
  font-size: clamp(0.9rem, 1vw, 1rem);
+ padding-top: 7px;
 }
 
 p {
@@ -75,6 +76,7 @@ font-family: "indivisible", sans-serif;
 font-weight: 500;
 font-style: normal;
 font-size: clamp(0.9rem, 1vw, 1rem);
+padding-bottom: 7px;
 }
 .project-descriptor {
 color: gray;
