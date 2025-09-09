@@ -120,10 +120,10 @@ img {
 }
 
   img,.gif {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin: auto;
-    max-width: 600px; /* never exceed parent container */
+    width: 55%; /* never exceed parent container */
     height: auto;    /* keeps aspect ratio */
     display: block;  /* removes small gaps under images */
   }
@@ -131,20 +131,20 @@ img {
   /* For larger screens */
 @media (min-width: 1024px) {
   img, .gif {
-    width: 90%;
+    max-width: 100%;
     padding-top: 150px;
     padding-bottom: 150px;
   }
 }
 
 .Map {
-  max-width: 100%;
+  width: 100%;
   padding-top: 0px;
 }
   /* For larger screens */
 @media (min-width: 1024px) {
   img, .map {
-    width: 100%;
+    max-width: 100%;
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -165,6 +165,7 @@ font-weight: 700;
 font-style: normal;
 text-transform: uppercase;
  font-size: clamp(1rem, 2vw + 0.5rem, 2.5rem);
+ padding-top: 50px;
 
 /*  display: inline;
   background-color: #69df46;
@@ -172,9 +173,29 @@ text-transform: uppercase;
   padding: 0; */
 }
 .figjam {
-  padding-bottom: 150px;
+  margin: auto;
+  padding-bottom: 10px;
 }
 .history{
   padding-bottom: 150px;
   width: 100%;
+}
+
+.header_image {
+  filter: grayscale(1);
+  width: 100%;          /* Always take full width of container */
+  height: auto;         /* Keep aspect ratio */
+  display: block;       /* Removes inline spacing issues */
+  padding: 0;           /* Reset padding for mobile */
+  object-fit: cover;    /* Ensures it crops nicely if constrained */
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+  .header_image {
+    max-width: 100%;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 }
