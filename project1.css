@@ -90,7 +90,7 @@ padding-top: 30px;
   display: flex;
   /*justify-content: space-between; /* pushes text left, image right */
   align-items:flex-start; /* aligns them at the top */
-  gap: 50px; /* space between text and image */
+/*   gap: 50px; space between text and image */
 
     border-top: 2px solid black;   /* top border */
   /*border-bottom: 2px solid black; /* bottom border */
@@ -119,7 +119,7 @@ img {
   }
 }
 
-  img,.gif {
+ .gif {
     padding-top: 50px;
     padding-bottom: 50px;
     margin: auto;
@@ -130,7 +130,7 @@ img {
 
   /* For larger screens */
 @media (min-width: 1024px) {
-  img, .gif {
+ .gif {
     max-width: 100%;
     padding-top: 150px;
     padding-bottom: 150px;
@@ -143,10 +143,9 @@ img {
 }
   /* For larger screens */
 @media (min-width: 1024px) {
-  img, .map {
+  .map {
     max-width: 100%;
     padding-top: 150px;
-    padding-bottom: 150px;
   }
 }
 
@@ -197,5 +196,18 @@ text-transform: uppercase;
     height: auto;
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+}
+
+.sketch {
+  padding-top: 3px;
+  width: 100%;
+  height: auto;  
+}
+  /* For larger screens */
+@media (min-width: 1024px) {
+  .sketch {
+    max-width: 100%;
+    height: auto;  
   }
 }
