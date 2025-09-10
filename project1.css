@@ -183,6 +183,7 @@ text-transform: uppercase;
   width: 70%;
     display: block;
   margin: 0 auto;
+  text-align: left;
 }
 
 .header_image {
