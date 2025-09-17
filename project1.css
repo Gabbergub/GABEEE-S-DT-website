@@ -247,4 +247,13 @@ text-transform: uppercase;
   height: auto;         /* keeps aspect ratio */
 }
 
+.ears-container {
+  display: flex;
+  gap: 10px; /* space between images */
+}
+
+.ears {
+  max-width: 100%;
+  height: auto;
+}
 
