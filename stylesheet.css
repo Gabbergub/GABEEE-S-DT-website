@@ -11,12 +11,18 @@ body {
   background-position: center;
   cursor: none; /* Hide the default cursor */
 }
+.line {
+border-top: 2px solid black;
+padding: 10px 0; /* optional: add space between borders and content */
+margin: 20px;
+}
 .content {
-   margin: 40px;
+   margin: 20px;
 }
 a {
   text-decoration: none;
-  color: #69df46;
+  /*color: #69df46;*/
+  color: black;
   
 }
 .link {
@@ -28,8 +34,8 @@ font-family: "indivisible", sans-serif;
 font-weight: 700;
 font-style: normal;
 text-transform: uppercase;
- font-size: clamp(1rem, 2vw + 0.5rem, 2.5rem);
-
+/* font-size: clamp(1rem, 2vw + 0.5rem, 2.5rem);*/
+ font-size: clamp(1rem, 2vw + 0.1rem, 1.5rem);
   display: inline; /* makes background only cover the text */
   background-color: #69df46;
   margin: 0;       /* remove default margin */
@@ -40,6 +46,9 @@ font-family: "indivisible", sans-serif;
 font-weight: 700;
 font-style: normal;
 text-transform: uppercase;
+}
+.title2 {
+  margin: 20px;
 }
 .project-info {
   display: flex;
@@ -121,6 +130,67 @@ img {
     width: 200px;    /* fills container on mobile */
     max-width: none;
   }
+}
+
+
+.code {
+  margin: 20px;
+  display: flex; /* places them side by side */
+  gap: 30px;     /* space between gifs */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+/*  justify-content: center; /* center on larger screens */
+}
+
+.gif_wrapper {
+  display: flex;
+  flex-direction: column; /* stack gif + text */
+/*  align-items: center;    /* center text under gif */
+  width: 450px;           /* control size */
+}
+
+.gif_wrapper img.gif {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px; /* optional */
+}
+
+.caption {
+margin-top: 20px; 
+font-size: 14px;
+color: #333;
+
+font-family: "indivisible", sans-serif;
+font-weight: 700;
+font-style: normal;
+text-transform: uppercase;
+  /*text-align: center;*/
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* adds space between the buttons */
+}
+
+.button1 {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  margin: 0;
+}
+.button2 {
+  padding: 10px 15px;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.button2 a {
+  color: white;
+  text-decoration: none;
+   cursor: pointer;
 }
 
 /*
