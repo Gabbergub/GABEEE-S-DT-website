@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: 	#ffffff;
+  background-color: 	#000000;
   cursor: url('arrow-cursor.png') 0 0, auto; /* set hot spot (x y) */
 
 /*background-size: 85.5px 85.5px;
@@ -11,8 +11,12 @@ body {
   background-position: center;
   cursor: none; /* Hide the default cursor */
 }
+.line1 {
+border-top: 2px solid #7f7f7f;
+padding: 10px 0; /* optional: add space between borders and content */
+}
 .line {
-border-top: 2px solid black;
+border-top: 2px solid #7f7f7f;
 padding: 10px 0; /* optional: add space between borders and content */
 margin: 20px;
 }
@@ -22,11 +26,12 @@ margin: 20px;
 a {
   text-decoration: none;
   /*color: #69df46;*/
-  color: black;
+  color: #7f7f7f;
   
 }
 .link {
 line-height: 0px;
+text-transform: uppercase;
 }
 
 .header {
@@ -42,15 +47,17 @@ text-transform: uppercase;
   padding: 0;      /* remove any padding */
 }
 h3 {
+  color: #7f7f7f;
 font-family: "indivisible", sans-serif;
-font-weight: 700;
+font-weight: 500;
 font-style: normal;
-text-transform: uppercase;
+/*text-transform: uppercase;*/
 }
 .title2 {
   margin: 20px;
 }
 .project-info {
+   color: #7f7f7f;
   display: flex;
   /*justify-content: space-between; /* pushes them to opposite sides */
   align-items: center; /* keeps text aligned nicely */
@@ -64,6 +71,7 @@ font-style: italic;
 }
 
 p {
+color: #7f7f7f;
 font-family: "owners-text", sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -80,16 +88,15 @@ padding-bottom: 40px;
   }
 }
 .project {
+  text-transform: uppercase;
   padding-bottom: 1px;
 font-family: "indivisible", sans-serif;
 font-weight: 500;
 font-style: normal;
 font-size: clamp(0.9rem, 1vw, 1rem);
 
-color: black;
+color: #7f7f7f;
 padding-bottom: 7px;      /* remove any padding */
-font-weight:bold;
-  
 }
 .project-descriptor {
 color: gray;
@@ -101,19 +108,18 @@ padding-top: 30px;
 
 .content1 {
   display: flex;
-  /*justify-content: space-between; /* pushes text left, image right */
-  align-items:flex-start; /* aligns them at the top */
-  gap: 50px; /* space between text and image */
-
-    border-top: 2px solid black;   /* top border */
-  /*border-bottom: 2px solid black; /* bottom border */
-  padding: 10px 0; /* optional: add space between borders and content */
+  flex-direction: row;      /* default: side by side */
+  align-items: flex-start;  /* keeps text aligned neatly */
+  gap: 20px;
+  
+  border-top: 2px solid #7f7f7f;
+  padding: 20px 0;
 }
 
-img {
-  max-width: 100%;  /* ensures it never exceeds its container */
-  height: auto;     /* maintains aspect ratio */
-  display: block;   /* removes extra space below image */
+.content1 img {
+  max-width: 500px;  /* keeps images reasonable on large screens */
+  height: auto;
+  display: block;
 }
 
 .shrink-hover {
@@ -124,11 +130,17 @@ img {
   transform: scale(0.9);
 }
 
-/* Optional: adjust size for very small screens */
+/* MOBILE: stack image above text */
 @media (max-width: 600px) {
-  img {
-    width: 200px;    /* fills container on mobile */
-    max-width: none;
+  .content1 {
+    flex-direction: column;   /* stack vertically */
+    /*align-items: center;      /* optional: center text under image */
+   /* text-align: center;       /* optional: center text */
+  }
+
+  .content1 img {
+    width: 500px;  /* smaller image for mobile */
+    max-width: 100%;
   }
 }
 

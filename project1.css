@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: 	#ffffff;
+  background-color: 	#7f7f7f;
   cursor: url('arrow-cursor.png') 0 0, auto; /* set hot spot (x y) */
 
 /*background-size: 85.5px 85.5px;
@@ -12,7 +12,7 @@ body {
   cursor: none; /* Hide the default cursor */
 }
 .content {
-   margin: 40px;
+   margin: 20px;
 }
 a {
   text-decoration: none;
