@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: 	#7f7f7f;
+  background-color: 	#ffffff;
   cursor: url('arrow-cursor.png') 0 0, auto; /* set hot spot (x y) */
 
 /*background-size: 85.5px 85.5px;
@@ -16,7 +16,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #69df46;
+  color: black;
   
 }
 .link {
@@ -154,10 +154,10 @@ img {
 
   .center {
   display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* centers vertically if parent has height */
-  flex-direction: column;  /* stack everything top → bottom */
-  text-align: center;      /* makes text + links centered */
+/*  justify-content: center;
+  align-items: center;    
+  flex-direction: column;
+  text-align: center;*/
   font-family: "indivisible", sans-serif;
 font-weight: 500;
 }
