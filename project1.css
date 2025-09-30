@@ -55,12 +55,13 @@ font-style: italic;
 
 p {
 font-family: "owners-text", sans-serif;
-font-weight: 400;
+font-weight: 500;
 font-style: normal;
-
+font-size: 25px;
 }
 
-.text {
+.text p {
+font-size: 18px;
 width: 50%;
 padding-top: 10px;
 padding-bottom: 40px;
@@ -152,13 +153,13 @@ img {
   }
 }
 
-  .center {
-  display: flex;
-/*  justify-content: center;
-  align-items: center;    
-  flex-direction: column;
-  text-align: center;*/
-  font-family: "indivisible", sans-serif;
+.center {
+display: flex;
+justify-content: center;
+align-items: center;    
+flex-direction: column;
+text-align: center;
+font-family: "indivisible", sans-serif;
 font-weight: 500;
 }
 .subject {
@@ -240,7 +241,7 @@ text-transform: uppercase;
 }
 
 
-.earss {
+.ears {
   display: block;       /* removes inline spacing */
   width: 100%;          /* fills parent width */
   max-width: 100%;      /* prevents overflow */
