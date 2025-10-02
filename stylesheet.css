@@ -18,10 +18,10 @@ padding: 10px 0; /* optional: add space between borders and content */
 .line {
 border-top: 2px solid #7f7f7f;
 padding: 10px 0; /* optional: add space between borders and content */
-margin: 20px;
+margin: 30px;
 }
 .content {
-   margin: 20px;
+   margin: 30px;
 }
 a {
   text-decoration: none;
@@ -29,38 +29,41 @@ a {
   color: black;
   
 }
-.link {
+.link h3{
 line-height: 0px;
 text-transform: uppercase;
-font-family: "indivisible", sans-serif;
+font-weight: 600;
+/*font-family: "indivisible", sans-serif;
 font-weight: 700;
 font-style: normal;
-font-size: 25px;
+font-size: 25px;*/
 /*font-size: clamp(1rem, 2vw + 0.1rem, 1.5rem);*/
 }
 
 .header {
 font-family: "indivisible", sans-serif;
-font-weight: 700;
+font-weight: 600;
 font-style: normal;
-text-transform: uppercase;
+
+/*text-transform: uppercase;*/
 /* font-size: clamp(1rem, 2vw + 0.5rem, 2.5rem);*/
  font-size: clamp(1rem, 2vw + 0.1rem, 1.5rem);
   display: inline; /* makes background only cover the text */
-  background-color: #69df46;
+/*  background-color: #69df46;*/
   margin: 0;       /* remove default margin */
   padding: 0;      /* remove any padding */
 }
 h3 {
   color: #7f7f7f;
 font-family: "indivisible", sans-serif;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
-font-size: clamp(0.9rem, 1vw, 1rem);
+text-transform: uppercase;
+/*font-size: clamp(0.9rem, 1vw, 1rem);*/
 /*text-transform: uppercase;*/
 }
 .title2 {
-  margin: 20px;
+  margin: 30px;
 }
 .project-info {
    color: #7f7f7f;
@@ -77,20 +80,21 @@ font-style: italic;
 }
 
 p {
-color: #7f7f7f;
 font-family: "owners-text", sans-serif;
 font-weight: 500;
 font-style: normal;
+font-size: 15px;
 }
 
-.text {
-width: 50%;
-padding-top: 10px;
-padding-bottom: 40px;
-font-size: 25px;
+.text p {
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-  .text {
+  .text p {
     width: 100%;
   }
 }
@@ -153,7 +157,7 @@ padding-top: 30px;
 
 
 .code {
-  margin: 20px;
+  margin: 30px;
   display: flex; /* places them side by side */
   gap: 30px;     /* space between gifs */
   flex-wrap: wrap; /* allows wrapping on small screens */
