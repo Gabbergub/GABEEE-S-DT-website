@@ -12,11 +12,11 @@ body {
   cursor: none; /* Hide the default cursor */
 }
 .content {
-   margin: 20px;
+   margin: 30px;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #69df46;
   
 }
 .link {
@@ -55,13 +55,12 @@ font-style: italic;
 
 p {
 font-family: "owners-text", sans-serif;
-font-weight: 500;
+font-weight: 400;
 font-style: normal;
-font-size: 25px;
+
 }
 
-.text p {
-font-size: 18px;
+.text {
 width: 50%;
 padding-top: 10px;
 padding-bottom: 40px;
@@ -93,12 +92,17 @@ padding-top: 30px;
 .content1 {
   display: flex;
   /*justify-content: space-between; /* pushes text left, image right */
-  align-items:flex-start; /* aligns them at the top */
+   /*align-items:flex-start; aligns them at the top */
 /*   gap: 50px; space between text and image */
 
     border-top: 2px solid black;   /* top border */
   /*border-bottom: 2px solid black; /* bottom border */
   padding: 10px 0; /* optional: add space between borders and content */
+
+  
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if parent has height */
+  flex-direction: column;  /* stack everything top → bottom */
 }
 
 img {
@@ -153,13 +157,13 @@ img {
   }
 }
 
-.center {
-display: flex;
-justify-content: center;
-align-items: center;    
-flex-direction: column;
-text-align: center;
-font-family: "indivisible", sans-serif;
+  .center {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if parent has height */
+  flex-direction: column;  /* stack everything top → bottom */
+  text-align: center;      /* makes text + links centered */
+  font-family: "indivisible", sans-serif;
 font-weight: 500;
 }
 .subject {
@@ -187,13 +191,7 @@ text-transform: uppercase;
   margin: 0 auto;
   text-align: left;
 }
-.list{
-  padding-top: 30px;
-  width: 70%;
-    display: block;
-  margin: 0 auto;
-  text-align: left;
-}
+
 
 .header_image {
   filter: grayscale(1);
@@ -241,20 +239,12 @@ text-transform: uppercase;
 }
 
 
-.ears {
+.earss {
   display: block;       /* removes inline spacing */
   width: 100%;          /* fills parent width */
   max-width: 100%;      /* prevents overflow */
   height: auto;         /* keeps aspect ratio */
 }
 
-.ears-container {
-  display: flex;
-  gap: 10px; /* space between images */
-}
 
-.ears {
-  max-width: 100%;
-  height: auto;
-}
 

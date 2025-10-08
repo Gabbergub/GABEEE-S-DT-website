@@ -266,3 +266,28 @@ font-style: normal;
   height: auto;
 }
 
+.image-flex {
+  display: flex;             /* Enable flex layout */
+  justify-content: center;   /* Center images horizontally */
+  align-items: flex-start;   /* Top-align images (no stretching) */
+  gap: 10px;                 /* Add space between images */
+}
+
+.image-flex img {
+  max-width: 100%;           /* Ensure image fits container */
+  height: auto;              /* Preserve aspect ratio */
+  display: block;            /* Remove inline spacing */
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;  /* Center all images horizontally */
+  align-items: flex-start;  /* Align images to the top */
+  gap: 10px;                /* Space between images */
+  flex-wrap: wrap;          /* Allow wrapping on smaller screens */
+}
+.image-row img {
+  display: block;
+  height: auto;
+  max-width: 100%;          /* Prevent stretching */
+}
