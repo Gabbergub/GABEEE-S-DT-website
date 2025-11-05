@@ -45,7 +45,7 @@ font-family: "indivisible", sans-serif;
 font-weight: 600;
 font-style: normal;
 
-/*text-transform: uppercase;*/
+text-transform: uppercase;
 /* font-size: clamp(1rem, 2vw + 0.5rem, 2.5rem);*/
  font-size: clamp(1rem, 2vw + 0.1rem, 1.5rem);
   display: inline; /* makes background only cover the text */
@@ -103,8 +103,7 @@ font-size:clamp(18px, 5vw, 30px);
   }
 }
 .project {
- 
-  padding-bottom: 1px;
+ padding-bottom: 1px;
 font-family: "indivisible", sans-serif;
 font-weight: 500;
 font-style: normal;
@@ -113,6 +112,7 @@ font-size: clamp(0.9rem, 1vw, 1rem);
 color: #7f7f7f;
 padding-bottom: 7px;      /* remove any padding */
 }
+
 .project-descriptor {
 color: gray;
 font-family: "owners-text", sans-serif;
@@ -132,6 +132,11 @@ padding-top: 30px;
 }
 
 .content1 img {
+  max-width: 700px;  /* keeps images reasonable on large screens */
+  height: auto;
+  display: block;
+}
+.gif {
   max-width: 700px;  /* keeps images reasonable on large screens */
   height: auto;
   display: block;
