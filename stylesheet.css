@@ -1,8 +1,8 @@
 body {
   margin: 0;
   background-color: 	#ffffff;
-  cursor: url('arrow-cursor.png') 0 0, auto; /* set hot spot (x y) */
-
+/*  cursor: url('arrow-cursor.png') 0 0, auto; /* set hot spot (x y) */
+cursor: none; /* Hide the default cursor */
 /*background-size: 85.5px 85.5px;
  background-image:
     linear-gradient(to right, #A9A9A9 1px, transparent 1px),
@@ -11,6 +11,26 @@ body {
   background-position: center;
   cursor: none; /* Hide the default cursor */
 }
+
+.custom-cursor {
+position: fixed;
+top: 0;
+left: 0;
+width: 20px; /* Adjust size as needed */
+height: 20px;
+/*border: 2px solid #7f7f7f; /* black outline */
+background-color: #69df46; /* light gray with 40% opacity */
+border-radius: 50%; /* Make it a circle */
+pointer-events: none; /* Ensure it doesn't block clicks */
+z-index: 10000; /* Keep it above all other elements */
+transition: transform 0.1s ease, background-color 0.2s ease, opacity 0.2s ease;
+transform: translate(-50%, -50%);
+opacity: 0; /* Start as hidden */
+}
+.hidden {
+opacity: 0; /* Hide when out of bounds */
+}
+
 .line1 {
 border-top: 2px solid #7f7f7f;
 padding: 10px 0; /* optional: add space between borders and content */
@@ -24,10 +44,12 @@ margin: 30px;
    margin: 30px;
 }
 a {
-  text-decoration: none;
-  /*color: #69df46;*/
-  color: black;
-  
+text-decoration: none;
+color: #7f7f7f;
+}
+.link a:hover {
+text-decoration: none;
+color: #69df46;  
 }
 .link h3{
 line-height: 0px;
@@ -54,7 +76,7 @@ background-color: #69df46;
   padding: 0;      /* remove any padding */
 }
 h3 {
-  color: #7f7f7f;
+  color: #333;
 font-family: "indivisible", sans-serif;
 font-weight: 600;
 font-style: normal;
@@ -114,7 +136,7 @@ padding-bottom: 7px;      /* remove any padding */
 }
 
 .project-descriptor {
-color: gray;
+color: #333;
 font-family: "owners-text", sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -132,12 +154,12 @@ padding-top: 30px;
 }
 
 .content1 img {
-  max-width: 700px;  /* keeps images reasonable on large screens */
+  max-width: 750px;  /* keeps images reasonable on large screens */
   height: auto;
   display: block;
 }
 .gif {
-  max-width: 700px;  /* keeps images reasonable on large screens */
+  max-width: 750px;  /* keeps images reasonable on large screens */
   height: auto;
   display: block;
 }
