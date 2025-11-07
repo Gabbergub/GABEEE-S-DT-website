@@ -247,6 +247,42 @@ text-transform: uppercase;
    cursor: pointer;
 }
 
+
+
+.wrapper {
+/*margin-top: 20px;*/
+color:	#ececec;
+background-color: #1A191A;
+text-align: center;
+max-width: 100%;
+overflow: hidden;
+}
+      
+      .marquee {
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        animation: marquee 7s linear infinite;
+      }
+      
+      .marquee p {
+        text-transform: uppercase;
+        font-family: "articulat-cf", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+          font-size: 30px;
+        display: inline-block;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(-50%, 0, 0);
+        }
+      }
+
 /*
 Indivisible Thin
 font-family: "indivisible", sans-serif;
