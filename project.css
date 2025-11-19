@@ -166,6 +166,12 @@ margin: 200px;
   }
 }
 
+.banner_animation {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 img {
   max-width: 700;  /* ensures it never exceeds its container */
   height: auto;     /* maintains aspect ratio */
