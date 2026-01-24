@@ -1,3 +1,11 @@
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   background-color: 	#ffffff;
@@ -31,10 +39,64 @@ opacity: 0; /* Start as hidden */
 opacity: 0; /* Hide when out of bounds */
 }
 
-.line1 {
-border-top: 2px solid #7f7f7f;
-padding: 10px 0; /* optional: add space between borders and content */
+.line1 { 
+border-top: 1.5px solid #1A191A;
+padding: 0; /* optional: add space between borders and content */
 }
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.nav-item {
+  /* Optional: add padding or style for nav items */
+font-family: "owners-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size:clamp(13px, 3vw, 30px);
+color: #1A191A;
+}
+.nav-item a:hover {
+font-size:clamp(13px, 3vw, 26.5px);
+  color: #69df46; /* Change color on hover */
+  font-family: "findreplace", sans-serif;
+font-weight: 900;
+font-style: normal;
+text-transform: capitalize;
+  text-decoration: none;
+}
+
+
+.nav-item a {
+  transition: letter-spacing 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.08em;
+}
+
+.nav-item a:hover {
+letter-spacing: 0.08em;
+}
+
+.nav-item.active a {
+  color: #ececec; /* Change color when clicked */
+  text-decoration: none;
+}
+.nav-item.active a:hover {
+  color: #69df46; /* Change color on hover even when active */
+  text-decoration: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #1A191A;
+}
+
 .line {
 border-top: 2px solid #7f7f7f;
 padding: 10px 0; /* optional: add space between borders and content */
@@ -51,15 +113,14 @@ color: #7f7f7f;
 text-decoration: none;
 color: #69df46;  
 }
-.link h3{
+.link {
 line-height: 0px;
 text-transform: uppercase;
-font-weight: 600;
-/*font-family: "indivisible", sans-serif;
-font-weight: 700;
+font-family: "findreplace", sans-serif;
+font-weight: 900;
 font-style: normal;
-font-size: 25px;*/
-/*font-size: clamp(1rem, 2vw + 0.1rem, 1.5rem);*/
+font-size:clamp(13px, 3vw, 30px);
+padding-bottom: 20px;
 }
 
 .header {
@@ -113,10 +174,21 @@ font-family: "owners-text", sans-serif;
 font-weight: 400;
 font-style: normal;
 font-size:clamp(18px, 5vw, 30px);
-  width: 50%;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 40px;
 }
+.text2 {
+font-family: "owners-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size:clamp(18px, 5vw, 30px);
+  width: 55%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+    flex: 1 1 0;
+}
+
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
@@ -135,6 +207,71 @@ color: #7f7f7f;
 padding-bottom: 7px;      /* remove any padding */
 }
 
+
+.container {
+padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+.info-container {
+  padding-left: 50px;
+  margin-right: -100px;
+  flex: 0 0 650px;
+  max-width: 600px;
+  margin-left: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.info1{
+font-family: "owners-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size:clamp(13px, 5vw, 18px);  
+}
+
+.info1 a:hover {
+  color: #69df46; /* Change color on hover */
+  text-decoration: none;
+}
+
+.title {
+  text-transform: capitalize;
+font-family: "findreplace", sans-serif;
+font-weight: 900;
+font-style: normal;
+font-size:clamp(13px, 3vw, 30px);
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .text2 {
+    width: 100%;
+  }
+  .info-container {
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .info-container {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
 .project-descriptor {
 color: #333;
 font-family: "owners-text", sans-serif;
@@ -149,8 +286,8 @@ padding-top: 30px;
   align-items: flex-start;  /* keeps text aligned neatly */
   gap: 20px;
   
-  border-top: 2px solid #7f7f7f;
-  padding: 20px 0;
+  border-top: 1.5px solid #1A191A;
+  padding: 10px 0;
 }
 
 .content1 img {
@@ -169,7 +306,7 @@ padding-top: 30px;
 }
 
 .shrink-hover:hover {
-  transform: scale(0.9);
+  transform: scale(1.02);
 }
 
 /* MOBILE: stack image above text */
@@ -190,7 +327,7 @@ padding-top: 30px;
 .code {
   margin: 30px;
   display: flex; /* places them side by side */
-  gap: 30px;     /* space between gifs */
+  gap: 35px;     /* space between gifs */
   flex-wrap: wrap; /* allows wrapping on small screens */
 /*  justify-content: center; /* center on larger screens */
 }
@@ -199,7 +336,7 @@ padding-top: 30px;
   display: flex;
   flex-direction: column; /* stack gif + text */
 /*  align-items: center;    /* center text under gif */
-  width: 450px;           /* control size */
+  width: 455px;           /* control size */
 }
 
 .gif_wrapper img.gif {
@@ -461,3 +598,35 @@ font-weight: 900;
 font-style: normal; 
 */
 
+/*
+FindReplace Thin
+font-family: "findreplace", sans-serif;
+font-weight: 200;
+font-style: normal;
+
+FindReplace Light
+font-family: "findreplace", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+FindReplace Regular
+font-family: "findreplace", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+FindReplace Medium
+font-family: "findreplace", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+FindReplace Bold
+font-family: "findreplace", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+FindReplace Black
+font-family: "findreplace", sans-serif;
+font-weight: 900;
+font-style: normal;
+
+*/
