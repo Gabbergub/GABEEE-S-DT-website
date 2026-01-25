@@ -48,7 +48,6 @@ a:hover ~ .custom-cursor,
 .custom-cursor.link-hover {
   transform: translate(-50%, -50%) rotate(20deg);
 }
-
 .line1 { 
 border-top: 1.5px solid #1A191A;
 padding: 0; /* optional: add space between borders and content */
@@ -136,7 +135,7 @@ color: #1A191A;
 
 .header {
 font-family: "indivisible", sans-serif;
-font-weight: 500;
+font-weight: 600;
 font-style: normal;
 
 font-family: "findreplace", sans-serif;
@@ -164,7 +163,7 @@ text-transform: uppercase;
   margin: 30px;
 }
 .project-info {
-   color: #1A191A;
+   color: #7f7f7f;
   display: flex;
   /*justify-content: space-between; /* pushes them to opposite sides */
   align-items: center; /* keeps text aligned nicely */
@@ -218,7 +217,7 @@ font-weight: 500;
 font-style: normal;
 font-size: clamp(0.9rem, 1vw, 1rem);
 
-color: #1A191A;
+color: #7f7f7f;
 padding-bottom: 7px;      /* remove any padding */
 }
 
@@ -367,7 +366,7 @@ font-size: 14px;
 color: #333;
 
 font-family: "indivisible", sans-serif;
-font-weight: 600;
+font-weight: 700;
 font-style: normal;
 text-transform: uppercase;
   /*text-align: center;*/
@@ -379,31 +378,22 @@ text-transform: uppercase;
 }
 
 .button1 {
-font-family: "owners-text", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size:clamp(12px, 3vw, 13px);  
   padding: 10px 15px;
-  padding: 10px;
-  background-color: #1A191A;
-  color: #F2F0EF;
-  border-radius: 0px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
   margin: 0;
 }
 .button2 {
-font-family: "owners-text", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size:clamp(12px, 3vw, 13px); 
   padding: 10px 15px;
-  background-color: #A9A9A9;
-  color: #F2F0EF;
-  border-radius: 0px;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
   margin: 0;
 }
 
 .button2 a {
-  color: #F2F0EF;
+  color: white;
   text-decoration: none;
    cursor: pointer;
 }
